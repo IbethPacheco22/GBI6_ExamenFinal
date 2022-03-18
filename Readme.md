@@ -1,10 +1,11 @@
 ## Datos Personales 
 ### Nombre: Ibeth Pacheco 
-### correo personal : ibethpacheco200@gmail.com 
+### correo personal : ibeth.pacheco@est.ikiam.edu.ec
 ### Carrera: Ingenieria en Biotecnologia 
 ### Materia: Bioinformatica 
+### Semestre: 6
 
-## Caracteristicas del computador 
+## Caracteristicas del computador :Procesador INTEL CORE I5 10MA generación, MEMORIA RAM 8GB, DISCO DURO 1 TERA
 ​
 ## Descripcion de datos 
 
@@ -13,5 +14,3 @@
 ### Programa utilizados : git bash y r Studio
 
 ### Las librerias utilizadas : ggplot, dplyr y sjPlot 
-
-​
