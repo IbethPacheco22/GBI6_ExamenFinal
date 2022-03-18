@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>CONTENIDO DE LA EVALUACIÃN</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em;
+}
+
+h2 { 
+   font-size:1.8em;
+}
+
+h3 { 
+   font-size:1.4em;
+}
+
+h4 { 
+   font-size:1.0em;
+}
+
+h5 { 
+   font-size:0.9em;
+}
+
+h6 { 
+   font-size:0.8em;
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important;
+      color: black !important;
+      filter:none !important;
+      -ms-filter: none !important;
+   }
+
+   body { 
+      font-size:12pt;
+      max-width:100%;
+   }
+       
+   a, a:visited { 
+      text-decoration: underline;
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em;
+      page-break-inside: avoid;
+   }
+
+   tr, img { 
+      page-break-inside: avoid;
+   }
+
+   img { 
+      max-width: 100% !important;
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm;
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm;
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3;
+   }
+
+   h2, h3 { 
+      page-break-after: avoid;
+   }
+}
+
+</style>
+
+<!-- Styles for R syntax highlighter -->
+<style type="text/css">
+   pre .operator,
+   pre .paren {
+     color: rgb(104, 118, 135)
+   }
+
+   pre .literal {
+     color: rgb(88, 72, 246)
+   }
+
+   pre .number {
+     color: rgb(0, 0, 205);
+   }
+
+   pre .comment {
+     color: rgb(76, 136, 107);
+   }
+
+   pre .keyword {
+     color: rgb(0, 0, 255);
+   }
+
+   pre .identifier {
+     color: rgb(0, 0, 0);
+   }
+
+   pre .string {
+     color: rgb(3, 106, 7);
+   }
+</style>
+
+<!-- R syntax highlighter -->
+<script type="text/javascript">
+var hljs=new function(){function m(p){return p.replace(/&/gm,"&amp;").replace(/</gm,"&lt;")}function f(r,q,p){return RegExp(q,"m"+(r.cI?"i":"")+(p?"g":""))}function b(r){for(var p=0;p<r.childNodes.length;p++){var q=r.childNodes[p];if(q.nodeName=="CODE"){return q}if(!(q.nodeType==3&&q.nodeValue.match(/\s+/))){break}}}function h(t,s){var p="";for(var r=0;r<t.childNodes.length;r++){if(t.childNodes[r].nodeType==3){var q=t.childNodes[r].nodeValue;if(s){q=q.replace(/\n/g,"")}p+=q}else{if(t.childNodes[r].nodeName=="BR"){p+="\n"}else{p+=h(t.childNodes[r])}}}if(/MSIE [678]/.test(navigator.userAgent)){p=p.replace(/\r/g,"\n")}return p}function a(s){var r=s.className.split(/\s+/);r=r.concat(s.parentNode.className.split(/\s+/));for(var q=0;q<r.length;q++){var p=r[q].replace(/^language-/,"");if(e[p]){return p}}}function c(q){var p=[];(function(s,t){for(var r=0;r<s.childNodes.length;r++){if(s.childNodes[r].nodeType==3){t+=s.childNodes[r].nodeValue.length}else{if(s.childNodes[r].nodeName=="BR"){t+=1}else{if(s.childNodes[r].nodeType==1){p.push({event:"start",offset:t,node:s.childNodes[r]});t=arguments.callee(s.childNodes[r],t);p.push({event:"stop",offset:t,node:s.childNodes[r]})}}}}return t})(q,0);return p}function k(y,w,x){var q=0;var z="";var s=[];function u(){if(y.length&&w.length){if(y[0].offset!=w[0].offset){return(y[0].offset<w[0].offset)?y:w}else{return w[0].event=="start"?y:w}}else{return y.length?y:w}}function t(D){var A="<"+D.nodeName.toLowerCase();for(var B=0;B<D.attributes.length;B++){var C=D.attributes[B];A+=" "+C.nodeName.toLowerCase();if(C.value!==undefined&&C.value!==false&&C.value!==null){A+='="'+m(C.value)+'"'}}return A+">"}while(y.length||w.length){var v=u().splice(0,1)[0];z+=m(x.substr(q,v.offset-q));q=v.offset;if(v.event=="start"){z+=t(v.node);s.push(v.node)}else{if(v.event=="stop"){var p,r=s.length;do{r--;p=s[r];z+=("</"+p.nodeName.toLowerCase()+">")}while(p!=v.node);s.splice(r,1);while(r<s.length){z+=t(s[r]);r++}}}}return z+m(x.substr(q))}function j(){function q(x,y,v){if(x.compiled){return}var u;var s=[];if(x.k){x.lR=f(y,x.l||hljs.IR,true);for(var w in x.k){if(!x.k.hasOwnProperty(w)){continue}if(x.k[w] instanceof Object){u=x.k[w]}else{u=x.k;w="keyword"}for(var r in u){if(!u.hasOwnProperty(r)){continue}x.k[r]=[w,u[r]];s.push(r)}}}if(!v){if(x.bWK){x.b="\\b("+s.join("|")+")\\s"}x.bR=f(y,x.b?x.b:"\\B|\\b");if(!x.e&&!x.eW){x.e="\\B|\\b"}if(x.e){x.eR=f(y,x.e)}}if(x.i){x.iR=f(y,x.i)}if(x.r===undefined){x.r=1}if(!x.c){x.c=[]}x.compiled=true;for(var t=0;t<x.c.length;t++){if(x.c[t]=="self"){x.c[t]=x}q(x.c[t],y,false)}if(x.starts){q(x.starts,y,false)}}for(var p in e){if(!e.hasOwnProperty(p)){continue}q(e[p].dM,e[p],true)}}function d(B,C){if(!j.called){j();j.called=true}function q(r,M){for(var L=0;L<M.c.length;L++){if((M.c[L].bR.exec(r)||[null])[0]==r){return M.c[L]}}}function v(L,r){if(D[L].e&&D[L].eR.test(r)){return 1}if(D[L].eW){var M=v(L-1,r);return M?M+1:0}return 0}function w(r,L){return L.i&&L.iR.test(r)}function K(N,O){var M=[];for(var L=0;L<N.c.length;L++){M.push(N.c[L].b)}var r=D.length-1;do{if(D[r].e){M.push(D[r].e)}r--}while(D[r+1].eW);if(N.i){M.push(N.i)}return f(O,M.join("|"),true)}function p(M,L){var N=D[D.length-1];if(!N.t){N.t=K(N,E)}N.t.lastIndex=L;var r=N.t.exec(M);return r?[M.substr(L,r.index-L),r[0],false]:[M.substr(L),"",true]}function z(N,r){var L=E.cI?r[0].toLowerCase():r[0];var M=N.k[L];if(M&&M instanceof Array){return M}return false}function F(L,P){L=m(L);if(!P.k){return L}var r="";var O=0;P.lR.lastIndex=0;var M=P.lR.exec(L);while(M){r+=L.substr(O,M.index-O);var N=z(P,M);if(N){x+=N[1];r+='<span class="'+N[0]+'">'+M[0]+"</span>"}else{r+=M[0]}O=P.lR.lastIndex;M=P.lR.exec(L)}return r+L.substr(O,L.length-O)}function J(L,M){if(M.sL&&e[M.sL]){var r=d(M.sL,L);x+=r.keyword_count;return r.value}else{return F(L,M)}}function I(M,r){var L=M.cN?'<span class="'+M.cN+'">':"";if(M.rB){y+=L;M.buffer=""}else{if(M.eB){y+=m(r)+L;M.buffer=""}else{y+=L;M.buffer=r}}D.push(M);A+=M.r}function G(N,M,Q){var R=D[D.length-1];if(Q){y+=J(R.buffer+N,R);return false}var P=q(M,R);if(P){y+=J(R.buffer+N,R);I(P,M);return P.rB}var L=v(D.length-1,M);if(L){var O=R.cN?"</span>":"";if(R.rE){y+=J(R.buffer+N,R)+O}else{if(R.eE){y+=J(R.buffer+N,R)+O+m(M)}else{y+=J(R.buffer+N+M,R)+O}}while(L>1){O=D[D.length-2].cN?"</span>":"";y+=O;L--;D.length--}var r=D[D.length-1];D.length--;D[D.length-1].buffer="";if(r.starts){I(r.starts,"")}return R.rE}if(w(M,R)){throw"Illegal"}}var E=e[B];var D=[E.dM];var A=0;var x=0;var y="";try{var s,u=0;E.dM.buffer="";do{s=p(C,u);var t=G(s[0],s[1],s[2]);u+=s[0].length;if(!t){u+=s[1].length}}while(!s[2]);if(D.length>1){throw"Illegal"}return{r:A,keyword_count:x,value:y}}catch(H){if(H=="Illegal"){return{r:0,keyword_count:0,value:m(C)}}else{throw H}}}function g(t){var p={keyword_count:0,r:0,value:m(t)};var r=p;for(var q in e){if(!e.hasOwnProperty(q)){continue}var s=d(q,t);s.language=q;if(s.keyword_count+s.r>r.keyword_count+r.r){r=s}if(s.keyword_count+s.r>p.keyword_count+p.r){r=p;p=s}}if(r.language){p.second_best=r}return p}function i(r,q,p){if(q){r=r.replace(/^((<[^>]+>|\t)+)/gm,function(t,w,v,u){return w.replace(/\t/g,q)})}if(p){r=r.replace(/\n/g,"<br>")}return r}function n(t,w,r){var x=h(t,r);var v=a(t);var y,s;if(v){y=d(v,x)}else{return}var q=c(t);if(q.length){s=document.createElement("pre");s.innerHTML=y.value;y.value=k(q,c(s),x)}y.value=i(y.value,w,r);var u=t.className;if(!u.match("(\\s|^)(language-)?"+v+"(\\s|$)")){u=u?(u+" "+v):v}if(/MSIE [678]/.test(navigator.userAgent)&&t.tagName=="CODE"&&t.parentNode.tagName=="PRE"){s=t.parentNode;var p=document.createElement("div");p.innerHTML="<pre><code>"+y.value+"</code></pre>";t=p.firstChild.firstChild;p.firstChild.cN=s.cN;s.parentNode.replaceChild(p.firstChild,s)}else{t.innerHTML=y.value}t.className=u;t.result={language:v,kw:y.keyword_count,re:y.r};if(y.second_best){t.second_best={language:y.second_best.language,kw:y.second_best.keyword_count,re:y.second_best.r}}}function o(){if(o.called){return}o.called=true;var r=document.getElementsByTagName("pre");for(var p=0;p<r.length;p++){var q=b(r[p]);if(q){n(q,hljs.tabReplace)}}}function l(){if(window.addEventListener){window.addEventListener("DOMContentLoaded",o,false);window.addEventListener("load",o,false)}else{if(window.attachEvent){window.attachEvent("onload",o)}else{window.onload=o}}}var e={};this.LANGUAGES=e;this.highlight=d;this.highlightAuto=g;this.fixMarkup=i;this.highlightBlock=n;this.initHighlighting=o;this.initHighlightingOnLoad=l;this.IR="[a-zA-Z][a-zA-Z0-9_]*";this.UIR="[a-zA-Z_][a-zA-Z0-9_]*";this.NR="\\b\\d+(\\.\\d+)?";this.CNR="\\b(0[xX][a-fA-F0-9]+|(\\d+(\\.\\d*)?|\\.\\d+)([eE][-+]?\\d+)?)";this.BNR="\\b(0b[01]+)";this.RSR="!|!=|!==|%|%=|&|&&|&=|\\*|\\*=|\\+|\\+=|,|\\.|-|-=|/|/=|:|;|<|<<|<<=|<=|=|==|===|>|>=|>>|>>=|>>>|>>>=|\\?|\\[|\\{|\\(|\\^|\\^=|\\||\\|=|\\|\\||~";this.ER="(?![\\s\\S])";this.BE={b:"\\\\.",r:0};this.ASM={cN:"string",b:"'",e:"'",i:"\\n",c:[this.BE],r:0};this.QSM={cN:"string",b:'"',e:'"',i:"\\n",c:[this.BE],r:0};this.CLCM={cN:"comment",b:"//",e:"$"};this.CBLCLM={cN:"comment",b:"/\\*",e:"\\*/"};this.HCM={cN:"comment",b:"#",e:"$"};this.NM={cN:"number",b:this.NR,r:0};this.CNM={cN:"number",b:this.CNR,r:0};this.BNM={cN:"number",b:this.BNR,r:0};this.inherit=function(r,s){var p={};for(var q in r){p[q]=r[q]}if(s){for(var q in s){p[q]=s[q]}}return p}}();hljs.LANGUAGES.cpp=function(){var a={keyword:{"false":1,"int":1,"float":1,"while":1,"private":1,"char":1,"catch":1,"export":1,virtual:1,operator:2,sizeof:2,dynamic_cast:2,typedef:2,const_cast:2,"const":1,struct:1,"for":1,static_cast:2,union:1,namespace:1,unsigned:1,"long":1,"throw":1,"volatile":2,"static":1,"protected":1,bool:1,template:1,mutable:1,"if":1,"public":1,friend:2,"do":1,"return":1,"goto":1,auto:1,"void":2,"enum":1,"else":1,"break":1,"new":1,extern:1,using:1,"true":1,"class":1,asm:1,"case":1,typeid:1,"short":1,reinterpret_cast:2,"default":1,"double":1,register:1,explicit:1,signed:1,typename:1,"try":1,"this":1,"switch":1,"continue":1,wchar_t:1,inline:1,"delete":1,alignof:1,char16_t:1,char32_t:1,constexpr:1,decltype:1,noexcept:1,nullptr:1,static_assert:1,thread_local:1,restrict:1,_Bool:1,complex:1},built_in:{std:1,string:1,cin:1,cout:1,cerr:1,clog:1,stringstream:1,istringstream:1,ostringstream:1,auto_ptr:1,deque:1,list:1,queue:1,stack:1,vector:1,map:1,set:1,bitset:1,multiset:1,multimap:1,unordered_set:1,unordered_map:1,unordered_multiset:1,unordered_multimap:1,array:1,shared_ptr:1}};return{dM:{k:a,i:"</",c:[hljs.CLCM,hljs.CBLCLM,hljs.QSM,{cN:"string",b:"'\\\\?.",e:"'",i:"."},{cN:"number",b:"\\b(\\d+(\\.\\d*)?|\\.\\d+)(u|U|l|L|ul|UL|f|F)"},hljs.CNM,{cN:"preprocessor",b:"#",e:"$"},{cN:"stl_container",b:"\\b(deque|list|queue|stack|vector|map|set|bitset|multiset|multimap|unordered_map|unordered_set|unordered_multiset|unordered_multimap|array)\\s*<",e:">",k:a,r:10,c:["self"]}]}}}();hljs.LANGUAGES.r={dM:{c:[hljs.HCM,{cN:"number",b:"\\b0[xX][0-9a-fA-F]+[Li]?\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"number",b:"\\b\\d+(?:[eE][+\\-]?\\d*)?L\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"number",b:"\\b\\d+\\.(?!\\d)(?:i\\b)?",e:hljs.IMMEDIATE_RE,r:1},{cN:"number",b:"\\b\\d+(?:\\.\\d*)?(?:[eE][+\\-]?\\d*)?i?\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"number",b:"\\.\\d+(?:[eE][+\\-]?\\d*)?i?\\b",e:hljs.IMMEDIATE_RE,r:1},{cN:"keyword",b:"(?:tryCatch|library|setGeneric|setGroupGeneric)\\b",e:hljs.IMMEDIATE_RE,r:10},{cN:"keyword",b:"\\.\\.\\.",e:hljs.IMMEDIATE_RE,r:10},{cN:"keyword",b:"\\.\\.\\d+(?![\\w.])",e:hljs.IMMEDIATE_RE,r:10},{cN:"keyword",b:"\\b(?:function)",e:hljs.IMMEDIATE_RE,r:2},{cN:"keyword",b:"(?:if|in|break|next|repeat|else|for|return|switch|while|try|stop|warning|require|attach|detach|source|setMethod|setClass)\\b",e:hljs.IMMEDIATE_RE,r:1},{cN:"literal",b:"(?:NA|NA_integer_|NA_real_|NA_character_|NA_complex_)\\b",e:hljs.IMMEDIATE_RE,r:10},{cN:"literal",b:"(?:NULL|TRUE|FALSE|T|F|Inf|NaN)\\b",e:hljs.IMMEDIATE_RE,r:1},{cN:"identifier",b:"[a-zA-Z.][a-zA-Z0-9._]*\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"operator",b:"<\\-(?!\\s*\\d)",e:hljs.IMMEDIATE_RE,r:2},{cN:"operator",b:"\\->|<\\-",e:hljs.IMMEDIATE_RE,r:1},{cN:"operator",b:"%%|~",e:hljs.IMMEDIATE_RE},{cN:"operator",b:">=|<=|==|!=|\\|\\||&&|=|\\+|\\-|\\*|/|\\^|>|<|!|&|\\||\\$|:",e:hljs.IMMEDIATE_RE,r:0},{cN:"operator",b:"%",e:"%",i:"\\n",r:1},{cN:"identifier",b:"`",e:"`",r:0},{cN:"string",b:'"',e:'"',c:[hljs.BE],r:0},{cN:"string",b:"'",e:"'",c:[hljs.BE],r:0},{cN:"paren",b:"[[({\\])}]",e:hljs.IMMEDIATE_RE,r:0}]}};
+hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+</head>
+
+<body>
+<p><strong>Bienvenidos al examen final de GBI6 - BioinformÃ¡tica.</strong></p>
+
+<h1>CONTENIDO DE LA EVALUACIÃN</h1>
+
+<p>Los contenidos de esta evaluaciÃ³n corresponden a los temas de R revisados en el curso:</p>
+
+<ul>
+<li><p>Tipos de datos</p></li>
+<li><p>InstalaciÃ³n y uso de librerÃ­as. </p></li>
+<li><p>Estructuras de control</p></li>
+<li><p>Funciones</p></li>
+<li><p>ManipulaciÃ³n de datos</p></li>
+<li><p>EstadÃ­stica bÃ¡sica</p></li>
+<li><p>VisualizaciÃ³n de datos</p></li>
+</ul>
+
+<h1>INDICACIONES GENERALES</h1>
+
+<p>Esta permitido consultar todo material disponible: diapositivas, google&hellip;Sin embargo <strong>NO</strong> esta permitido consultar a sus colegas.</p>
+
+<p>Ustedes estan utilizando el R Markdown. Las instruciones son:</p>
+
+<ul>
+<li><p>Creen una carpeta en su computador con el nombre &ldquo;GBI6_ExamenFinal&rdquo; donde guarden este cuaderno .Rmd. </p></li>
+<li><p>Cree un subdirectorio de nombre &ldquo;data&rdquo; donde guarde la data que van a utilizar.</p></li>
+<li><p>Cree un subdirectorio de nombre &ldquo;results&rdquo; donde guarde la tablas y figuras generadas del anÃ¡lisis.</p></li>
+<li><p>Definan a esa carpeta como su directorio de trabajo.</p></li>
+<li><p>Arriba, <strong>solamente</strong> donde dice &ldquo;author&rdquo;, deben llenar sus nombres.</p></li>
+<li><p>Los codigos deben ser escritos dentro de las cajas que inician y terminan con &ldquo; o dentro de las cajas indicadas abajo de las preguntas.</p></li>
+<li><p>Al final del examen deben utilizar el comando &quot;Knit&rdquo; para generar un archivo .html</p></li>
+<li><p>Es recomendable crear una copia de este script guÃ­a.</p></li>
+<li><p>Genere controles de la versiÃ³n para cada una de las preguntas con la leyenda &ldquo;Nombre Apellido, resuelve el ejercicio XX&rdquo;. </p></li>
+<li><p>Copie y peque la direcciÃ³n de su repositorio de GitHub en la actividad <strong>&ldquo;ExamenFinal&rdquo;</strong>.</p></li>
+<li><p>AsegÃºrese de responder explÃ­citamente cada una de las preguntas.</p></li>
+</ul>
+
+<p>Para comprender la data de esta evaluaciÃ³n se requiere conocer el significado de algunos acrÃ³nimos de los tipos de cancer como indica el <a href="https://gdac.broadinstitute.org/">Broad Institute Cancer Names</a>. Asimismo revise la informaciÃ³n de ayuda para <code>expresionsTCGA</code>. La data contiene las columnas: </p>
+
+<ul>
+<li><p><strong>bcr_patient_barcode</strong>: es el identificador del paciente. </p></li>
+<li><p><strong>dataset</strong>: es el identificador del tipo de cancer del paciente. </p></li>
+<li><p><strong>resto de columnas</strong>: nivees de expresiÃ³n de los diferentes mRNA de los genes que estÃ¡n como nombre de columna (para este anÃ¡lisis se han seleccionado solamente 7 de ellos). </p></li>
+</ul>
+
+<h1>PREGUNTAS</h1>
+
+<h2><strong>Pregunta 1: MANIPULACIÃN DE DATOS [4 PUNTOS]</strong></h2>
+
+<h3>[0.5 PUNTOS] 1.1 Defina su directorio de trabajo.</h3>
+
+<pre><code class="r">setwd(&quot;C:/Users/Laptop/Documents/bioinformatica&quot;)
+</code></pre>
+
+<h3>[0.5 PUNTOS] 1.2. Cargue la data &ldquo;mRNA_expr.csv&rdquo;</h3>
+
+<pre><code class="r">df &lt;- &quot;cargue la data&quot;
+library(readr)
+</code></pre>
+
+<pre><code>## Warning: package &#39;readr&#39; was built under R version 4.1.3
+</code></pre>
+
+<pre><code class="r">df &lt;- read_csv(&quot;data/mRNA_expr.csv&quot;) 
+</code></pre>
+
+<pre><code>## Rows: 1463 Columns: 9
+## -- Column specification --------------------------------------------------------
+## Delimiter: &quot;,&quot;
+## chr (2): bcr_patient_barcode, dataset
+## dbl (7): GATA3, PTEN, XBP1, ESR1, MUC1, FN1, GAPDH
+## 
+## i Use `spec()` to retrieve the full column specification for this data.
+## i Specify the column types or set `show_col_types = FALSE` to quiet this message.
+</code></pre>
+
+<h3>[1 PUNTO] 1.3 Cree una funciÃ³n de nombre <code>long_df</code> para transformar la data <code>df</code> de la forma wide a long.</h3>
+
+<pre><code class="r"># Escriba aquÃ­ la funciÃ³n long_df
+## FunciÃ³n long_df. realiza un reordenamiento de datos de wider a longer. 
+library(tidyr)
+</code></pre>
+
+<pre><code>## Warning: package &#39;tidyr&#39; was built under R version 4.1.3
+</code></pre>
+
+<pre><code class="r">library(dplyr)
+</code></pre>
+
+<pre><code>## Warning: package &#39;dplyr&#39; was built under R version 4.1.3
+</code></pre>
+
+<pre><code>## 
+## Attaching package: &#39;dplyr&#39;
+</code></pre>
+
+<pre><code>## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     filter, lag
+</code></pre>
+
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     intersect, setdiff, setequal, union
+</code></pre>
+
+<pre><code class="r">long_df &lt;- function(df) {
+  long_df &lt;- gather(df, gen, expresion_level, GATA3, PTEN, XBP1, ESR1, MUC1, FN1, GAPDH, factor_key=TRUE)
+  long_df1 &lt;- select(long_df, -bcr_patient_barcode)
+  return (long_df1)
+}
+</code></pre>
+
+<h3>[1 PUNTO] Genere la data <code>df_long</code> utilizandola funciÃ³n <code>long_df</code>.</h3>
+
+<p>La tabla resultante tendrÃ¡ tres columnas: <code>dataset, gen, expresion_level</code>.  </p>
+
+<pre><code class="r"># Genere la data df_long 
+df_long &lt;- long_df(df) 
+</code></pre>
+
+<h3>[0.5 PUNTOS] 1.5 A partir de la data <code>df_long</code>, genere un <strong>Descriptive table</strong> (librerÃ­a <code>sjPlot</code>) y guÃ¡rdelo en el subdirectorio &ldquo;result&rdquo;  con el nombre <strong>mRNA_expr_summary.doc</strong> (previamente debe seleccionar las celdas adecuadas con funciones de la librerÃ­a <code>dplyr</code> en conjunto con el operador <code>%&gt;%</code>).</h3>
+
+<pre><code class="r"># Escriba el cÃ³digo para crear el Descriptive table 
+
+## Crea un data frame llamado LUSC_df que contiene los datos del cancer de pulmon. Posteriormente, creamos un data frame denominado desc_table, aqui cambiamos el ordenamiento de los datos de longer a wider. Finalmente creamos un resumen de los datos de estadistica descriptivas y guardamos la tabla con la funciÃ³n tab_df()
+
+library(sjPlot)
+</code></pre>
+
+<pre><code>## Warning: package &#39;sjPlot&#39; was built under R version 4.1.3
+</code></pre>
+
+<pre><code class="r">library(sjmisc)
+</code></pre>
+
+<pre><code>## Warning: package &#39;sjmisc&#39; was built under R version 4.1.3
+</code></pre>
+
+<pre><code>## 
+## Attaching package: &#39;sjmisc&#39;
+</code></pre>
+
+<pre><code>## The following object is masked from &#39;package:tidyr&#39;:
+## 
+##     replace_na
+</code></pre>
+
+<pre><code class="r">#Lung squamous cell carcinoma
+LUSC_df &lt;- df_long %&gt;% filter(dataset == &quot;LUSC&quot;) %&gt;% select(2:3) 
+desc_table &lt;- LUSC_df %&gt;% group_by(gen) %&gt;% mutate(row = row_number()) %&gt;%
+  tidyr::pivot_wider(names_from = gen, values_from = expresion_level) %&gt;%
+  select(-row)
+descr(desc_table) %&gt;% tab_df(title = &quot;Estadistica descriptiva del cancer de pulmen LUSC&quot;, file = &quot;results/mRNA_expr_summary.doc&quot;) 
+</code></pre>
+
+<table style="border-collapse:collapse; border:none;">
+<caption style="font-weight: bold; text-align:left;">Estadistica descriptiva del cancer de pulmen LUSC</caption>
+<tr>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; text-align:left; ">var</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; ">type</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; ">label</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; ">n</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; ">NA.prc</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; ">mean</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; col7">sd</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; col8">se</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; col9">md</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; 0">trimmed</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; 1">range</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; 2">iqr</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; 3">skew</th>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">GATA3</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">numeric</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">GATA3</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">154</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">-3.76</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; col7">0.91</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; col8">0.07</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; col9">-3.93</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; 0">-3.87</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; 1">6.26 (-5.06-1.2)</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; 2">1.03</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; 3">1.84</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">PTEN</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">numeric</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">PTEN</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">154</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.25</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; col7">0.66</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; col8">0.05</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; col9">0.30</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; 0">0.29</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; 1">3.41 (-1.94-1.47)</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; 2">0.88</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; 3">-0.68</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">XBP1</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">numeric</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">XBP1</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">154</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">-0.29</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; col7">0.82</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; col8">0.07</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; col9">-0.42</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; 0">-0.33</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; 1">4.49 (-2.29-2.19)</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; 2">0.98</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; 3">0.50</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">ESR1</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">numeric</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">ESR1</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">154</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">-2.99</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; col7">1.05</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; col8">0.08</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; col9">-3.06</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; 0">-3.07</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; 1">5.62 (-5.2-0.42)</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; 2">1.04</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; 3">0.79</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">MUC1</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">numeric</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">MUC1</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">154</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0.56</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; col7">1.15</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; col8">0.09</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; col9">0.65</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; 0">0.57</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; 1">5.05 (-1.81-3.24)</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; 2">1.82</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; 3">-0.04</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">FN1</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">numeric</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">FN1</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">154</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">0</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">-0.98</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; col7">1.07</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; col8">0.09</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; col9">-1.04</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; 0">-1.00</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; 1">5.2 (-3.45-1.75)</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; 2">1.42</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; 3">0.17</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; border-bottom: double; ">GAPDH</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double; ">numeric</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double; ">GAPDH</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double; ">154</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double; ">0</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double; ">-0.54</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double; col7">0.68</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double; col8">0.05</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double; col9">-0.58</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double; 0">-0.56</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double; 1">4.61 (-2.61-2)</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double; 2">0.84</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double; 3">0.34</td>
+</tr>
+</table>
+
+<h3>[0.5 PUNTOS] 1.6 Interprete los resultados de la tabla resultante de la secciÃ³n 1.5.</h3>
+
+<pre><code class="tex"># La tabla presenta estadistica descriptiva del data frame desc_Table. En la columna se observa que existen 154 muestras de cancer de pulmon. La media entre los genes difiere y presenta valores positivos y negativos. Finalmente presenta valores de error estandar menores a 0.10 indicando una estimacion precisa de la media. 
+
+</code></pre>
+
+<h2><strong>Pregunta 2 VISUALIZACION DE DATOS  [5 PUNTOS]</strong></h2>
+
+<p>Para esta pregunta tiene que utilizar la data <code>df_long</code>. </p>
+
+<h3>[1 PUNTO] 2.1 Cree la funcion <code>tcga_boxplots</code> para visualizar boxplots y jitterplots. El Ãºnico parÃ¡metro de la funciÃ³n es <code>dataset</code>. La funciÃ³n debe crear un boxplot de los niveles de expresiÃ³n para cada gen.</h3>
+
+<pre><code class="r"># Escriba el cÃ³digo para crear la funciÃ³n tcga_boxplots
+
+library(ggplot2) 
+</code></pre>
+
+<pre><code>## Warning: package &#39;ggplot2&#39; was built under R version 4.1.3
+</code></pre>
+
+<pre><code class="r">## creamos la funciÃ³n tcga_boxplots. Parametro de input un data frame y output un grafico con el nivel de expresiÃ³n de cada gen
+tcga_boxplots &lt;- function(dataset) {
+  return(ggplot (dataset, aes(x = gen, y = expresion_level, col = gen)) + labs(x=&quot;Gen&quot;, y = &quot;Nivel de expresion&quot;) + geom_boxplot())
+}
+</code></pre>
+
+<h3>[0.5 PUNTOS] 2.2 Utilizando la funciÃ³n <code>lapply()</code> genera la lista <code>cancertype_boxplots</code> con las grÃ¡ficas para cada tipo de cancer (cada tipo de dataset).</h3>
+
+<pre><code class="r"># Escriba el cÃ³digo para generar la lista. 
+## creamos una lista de data frame utilizando la funciÃ³n filter para crear nuevos data frames por los 6 tipos de canceres. 
+list_boxplots &lt;- list(
+  BRCA &lt;- filter(df_long, dataset == &quot;BRCA&quot;),
+  OV &lt;- filter(df_long, dataset == &quot;OV&quot;),
+  LUSC &lt;- filter(df_long, dataset == &quot;LUSC&quot;),
+  KIPAN &lt;- filter(df_long, dataset == &quot;KIPAN&quot;),
+  KIRP &lt;- filter(df_long, dataset == &quot;KIRP&quot;),
+  UCEC &lt;- filter(df_long, dataset == &quot;UCEC&quot;)
+)
+
+## creamos la lista cancertype_boxplots que contiene los niveles de expresion de los tipos de canceres 
+cancertype_boxplots = lapply(list_boxplots, function(x) {ggplot(x, aes(dataset, expresion_level, col = dataset)) + geom_boxplot() + labs( y = &quot;Nivel de expresiÃ³n&quot;)})
+</code></pre>
+
+<h3>[0.5 PUNTOS] 2.3 Guarde en el subdirectorio <code>result</code> el tercer plot de la lista <code>cancertype_boxplots</code> con el nombre <code>boxplot3.png</code>. La definiciÃ³n de a figura debe ser de 300dpi.</h3>
+
+<pre><code class="r"># Escriba el cÃ³digo para guardar la tercera figura de la lista. 
+cancertype_boxplots[3]
+</code></pre>
+
+<pre><code>## [[1]]
+</code></pre>
+
+<p><img src="data:image/png;base64,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" alt="plot of chunk boxplot3"/></p>
+
+<pre><code class="r">ggsave(&quot;results/boxplot3.png&quot;, width = 6, height = 8, dpi = 300)
+</code></pre>
+
+<h3>[1 PUNTO] 2.4 Escriba la funciÃ³n <code>reg_gen_expression</code>, con el parÃ¡metro <code>gen</code>. En este caso la funciÃ³n visualizarÃ¡ una grÃ¡fica de nube de puntos (geom_point) y una regresiÃ³n por tipo de &ldquo;dataset&rdquo;. La grÃ¡fica serÃ¡ de comparaciÃ³n de gen1 con gen2; por ejemplo en el eje &ldquo;x&rdquo; <code>GATA3</code> y en el eje &ldquo;y&rdquo;&ldquo; <code>FN1</code>.</h3>
+
+<pre><code class="r"># Escriba aquÃ­ su funciÃ³n reg_gen_expression
+
+type_cancer &lt;- list(
+  BRCA &lt;- filter(df_long, dataset == &quot;BRCA&quot;),
+  OV &lt;- filter(df_long, dataset == &quot;OV&quot;),
+  LUSC &lt;- filter(df_long, dataset == &quot;LUSC&quot;),
+  KIPAN &lt;- filter(df_long, dataset == &quot;KIPAN&quot;),
+  KIRP &lt;- filter(df_long, dataset == &quot;KIRP&quot;),
+  UCEC &lt;- filter(df_long, dataset == &quot;UCEC&quot;)
+)
+## creamos la lista plots_cancer. La lista transforma las data set longer a wider  
+plots_cancer &lt;- list (  
+  BRCA_1 &lt;- BRCA %&gt;% group_by(gen) %&gt;% mutate(row = row_number()) %&gt;%
+    tidyr::pivot_wider(names_from = gen, values_from = expresion_level) %&gt;%
+    select(-row),
+  OV_1 &lt;- OV %&gt;% group_by(gen) %&gt;% mutate(row = row_number()) %&gt;%
+    tidyr::pivot_wider(names_from = gen, values_from = expresion_level) %&gt;%
+    select(-row),
+  LUSC_1 &lt;- LUSC %&gt;% group_by(gen) %&gt;% mutate(row = row_number()) %&gt;%
+    tidyr::pivot_wider(names_from = gen, values_from = expresion_level) %&gt;%
+    select(-row),
+  KIPAN_1 &lt;- KIPAN %&gt;% group_by(gen) %&gt;% mutate(row = row_number()) %&gt;%
+    tidyr::pivot_wider(names_from = gen, values_from = expresion_level) %&gt;%
+    select(-row),
+  KIRP_1 &lt;- KIRP %&gt;% group_by(gen) %&gt;% mutate(row = row_number()) %&gt;%
+    tidyr::pivot_wider(names_from = gen, values_from = expresion_level) %&gt;%
+    select(-row),
+  UCEC_1 &lt;- UCEC %&gt;% group_by(gen) %&gt;% mutate(row = row_number()) %&gt;%
+    tidyr::pivot_wider(names_from = gen, values_from = expresion_level) %&gt;%
+    select(-row)
+)
+
+## La funciÃ³n reg_gen_expression(). El parametro de entrada es tipo string y se puede elegir entre los siete genes de estudio 
+## Posteriormente el gen elegido ploteara las 6 combinaciones posibles con el resto de genes y guardara en la lista  
+
+reg_gen_expression &lt;- function (gen) {
+  ## enunciamos la condicional if para deliminar el gen de estudio y crear posteriormente los graficos 
+  if (gen == &quot;GATA3&quot;){
+    total &lt;- list (
+      lapply(plots_cancer, function(x) {ggplot(x, aes(GATA3, PTEN)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(GATA3, XBP1)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(GATA3, ESR1)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(GATA3, MUC1)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(GATA3, FN1)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(GATA3, GAPDH)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}))
+  }
+  else if (gen == &quot;PTEN&quot;){
+    total &lt;- list (
+      lapply(plots_cancer, function(x) {ggplot(x, aes(PTEN, GATA3)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(PTEN, XBP1)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(PTEN, ESR1)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(PTEN, MUC1)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(PTEN, FN1)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(PTEN, GAPDH)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}))
+  }
+  else if (gen == &quot;XBP1&quot;){
+    total &lt;- list (
+      lapply(plots_cancer, function(x) {ggplot(x, aes(XBP1, GATA3)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(XBP1, PTEN)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(XBP1, ESR1)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(XBP1, MUC1)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(XBP1, FN1)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(XBP1, GAPDH)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}))
+  }
+  else if (gen == &quot;ESR1&quot;){
+    total &lt;- list (
+      lapply(plots_cancer, function(x) {ggplot(x, aes(ESR1, GATA3)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(ESR1, PTEN)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(ESR1, XBP1)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(ESR1, MUC1)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(ESR1, FN1)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(ESR1, GAPDH)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}))
+  }
+  else if (gen == &quot;MUC1&quot;){
+    total &lt;- list (
+      lapply(plots_cancer, function(x) {ggplot(x, aes(MUC1, GATA3)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(MUC1, PTEN)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(MUC1, XBP1)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(MUC1, ESR1)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(MUC1, FN1)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(MUC1, GAPDH)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}))
+  }
+  else if (gen == &quot;FN1&quot;){
+    total &lt;- list (
+      lapply(plots_cancer, function(x) {ggplot(x, aes(FN1, GATA3)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(FN1, PTEN)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(FN1, XBP1)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(FN1, ESR1)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(FN1, MUC1)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(FN1, GAPDH)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}))
+  }
+  else if (gen == &quot;GAPDH&quot;){
+    total &lt;- list (
+      lapply(plots_cancer, function(x) {ggplot(x, aes(GAPDH, GATA3)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(GAPDH, PTEN)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(GAPDH, XBP1)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(GAPDH, ESR1)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(GAPDH, MUC1)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}), 
+      lapply(plots_cancer, function(x) {ggplot(x, aes(GAPDH, FN1)) + 
+          geom_point() + geom_smooth(method=&#39;lm&#39;, formula= y~x)}))
+  }
+}
+</code></pre>
+
+<h3>[0.5 PUNTOS] 2.5. Utilizando la funciÃ³n <code>lapply()</code> genera la lista <code>reg_genplots</code> con las grÃ¡ficas para cada par de genes posibles. Recuerde que tiene 7 tipos de genes, se debe tener todas las combinaciones posibles por pares de genes (combinatoria sin repeticiÃ³n).</h3>
+
+<pre><code class="r"># Escriba el cÃ³digo para generar la lista. 
+## En el caso de ejemplo se selecciono el gen GAPDH 
+list_regplots &lt;- reg_gen_expression(&quot;GAPDH&quot;)
+</code></pre>
+
+<h3>[0.5 PUNTOS] 2.6. Guarde en el subdirectorio <code>result</code> el onceavo plot de la lista <code>reg_genplots</code> con el nombre <code>regresion11.pdf</code>. La definiciÃ³n de a figura debe ser de 300dpi.</h3>
+
+<pre><code class="r"># Escriba el cÃ³digo para guardar el onceavo plot. 
+list_regplots[[5]][[2]] 
+</code></pre>
+
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfgAAAH4CAMAAACR9g9NAAAAt1BMVEUAAAAAADoAAGYAOpAAZrYzMzMzZv86AAA6AGY6OpA6ZpA6kNs9PT1NTU1NTY5NbqtNjshmAABmADpmAGZmtv9uTY5ubqtuq6tuq+SOTU2OTY6ObquOyP+QOgCQOjqQOmaQ2/+rbk2r5P+2ZgC2Zjq2///Ijk3Ijm7IyP/I///KysrW1tbbkDrbtmbb///kq27kq47k/8jk///r6+v/tmb/yI7/25D/5Kv//7b//8j//9v//+T////wrJZTAAAACXBIWXMAAAsSAAALEgHS3X78AAAZq0lEQVR4nO2dC7vctnGGmTinTeuzdtzIqWxJjR3VSi25UaqVLB2Z//939ewuL7jMDAACJAHON88j7S6JjzPgSwwu5O7pephK6/YOALaPAbxSA3ilBvBKLQj+HGvxJTMkmzipVlLGCcA3JwF4pRKAVyoBeKUSgFcqAXilEoBXKgF4pRKAVyoBeKUSgFcqAXilEoBXKgF4pRKAVyoBeKUSgFcqAXilEoA3rOuKO6lWAvCzdV2IfK0UAT5LAfDJkmOAR6pPlhwEvCYJwCuVALxSCcArlQC8UgnAK5UAvFIJwCuVALxSCcArlQC8UgnAK5UAvFIJwCuVALxSCcArlQC8UgnAK5UAvFIJwBeUUM/sAfzxwZNP6QI8wJfxUkgC8AUliamee5q7odo3DD74LH2eE1Jy88l+fwPgM6OKUYS/PbPQyXhYQjL4BPi1oopRrAV+Oi4PXkGq//iXd7WCXyvVS+BDPg8D/rcfv64XvGEsj2lHTqqPv8IOA/7tfz57BH93dxfqCva1SyNN21Hk6AcwpmIf//J/z1po8Wx3P+/IiCthMHGUFv/2dDo9bQB82VTveVGY6vuHvVs8edJrXVMD+NyoJqPTbK1IDgR+tI2jmmxT8I6zfC8xfQTA07ZFqh98dJ1NPnutPmpUCPCrKmSK8wo8Cd7DF7lkC/DZEucElgdP3XvpB78+v9i1eqT6TIl7olcYSJAjidt2Yu/x1+qbBe+iCQwkpuKGbgSvch5fB3g61Us8vFZK3mrz35r9fJ+CnPVSXqIJPKUQh04R4El9Z5DHPL4Z8FQbZp3QFw7AVw8+YZZFO+EKF7ivs6pEPXjPZvA+01opAny6wqdrLsHtEVdQUuQhbu3gxZvwMvi4wXr5qlAhKwefNm+KAO8esncKxHpJM4BPjCqIYt59eReYx1MLrVWAR6p3JSEU5rDt8Z3shFt4d0tExJVqGNylRhVs8DR4bibu74uOa5YB/AbgQ0alejpRUCO767US15kYaoCvADytIBnT2/pAb0Lcmk2K66YC+MyoYhV0g7d33GZ3Anh7LLgs1Q9ygM+LKjT4Ip2Y4Kz7rMOwgOfO3HsF+K3BB6dblBNL5IAX42K9IdVXBd4c3PEi7z6dEFfy4zRJt4JCBvCGhW60S6k+2knQOIlwXQJ8ZlS8MeCDSzIA725qDDyd6sOLsIaEXNljJeRjOhFeYk0L+HVWq1PAj7dwTA2plm8FUZb6iJ4d2HqKCsCXvD/FDOYkyRyCBZ6mO4GPxZl0kfiBrac4Fvi00yymegF8CnmAF6xcqmdOM5MHZCd8qk/CiVSfG1WMggbCNeSMuBJwYnCXGVWUgmnwBPjgLfxCcQF8blSG8b1vuLxxq9Xr4wMugnHtJzkiePZuW5YTG7x3RK4TB/g1wJPjLuZeeqIT6uqRnHCDBYBfAfz1ZA/nm2dym3AnOpHmZtNRHUHsUegDRAZWStI8+PHcskxSbpja999ZCbkAO07so3yH1upTp3TKwJ+vDT5wxzQB/FzUXoudVmt6f5ct9bPNops0yYs42sCfz2HwCXfKx3XYs9Pk5/XZKct4MnMlz9wtXJDcHoCPMq+P58q4J7P3y8x8nacwXPCmytpiHsHykraAk3QHwZfEOUm1ysBHSIYm6ZDv/TJMIp8uhVuqH7adp+KOhAKf0obJwEKS1CRxMPB05SPAd2R7tvZZEqM4NbXzvAD8qlFxtRdSvbEuZx7AzrUyeMbsscfytXqk+rAk6bK3Fe6LQ96La0r13OGHQ2ABZ8dULyiYS4XcLCzD8TP7PnVKXhC85Ppg4CdjcPoK5uQwJKlVGi7j+2OGeZVACLIceDH/HRQ8Q8LauOAmjT2vc7ezGse/+0pUpcjKnSrwZB99PlMbE5d8HPAmvWlkSGtc/2HwqUN0pHpyVD6ZNI+3inHqfk71NnhOZg8LolN9IfBlFRng17fLGZP2uu/J0vJB3IN1Y3FDlv0Hp7gD1PmXrCpo8WJ289Mu37apbdfmS+dzW2YeNlgVPwSpDxKSRMhRrJMUyZ7gvbUVc6uzLRL8XMRiaXbttC9ihCFSHA9s71gCfoPOoTLwY42HWbmz1S1rvu/PYoKwR+sSeC8W87DiSIJe/BNqzzlXDt7mNBVY5sQcxZ+HVN910qVCXhUh8AT5RUxUp3oKN98UQk5m7sTlJMYS54U9LJZsk6OyT+DUoBKcEG16apkh8M6AQPBiawB+SVT8CZ6BRTmZ865PfjyaOAswenjjKPLyvtGXsIHF2MHBS6txDPjgoqWdb0nw8356DGV01tPn8QPr3+1GrF1szHJd1lXsB546SxR4Y2FMSs7z3bkZgdmsDeVYQARPpXreP5+PkgfoZy3grfPip3rzxAXAd5Odnf+ckeJ0aZDt2PMRMbQM5YI0k04tfbSWwA8jL/rE2OCFydzU0HqDu2Fel+2n5QScIYbU/rKpngm2KfDuqoorsfrYM3dWzZY9vpgf5pJn++10x8Vo+9TR46rClA9KSFMB3icySNwmyXfIdvu2xtdiojXAkyWJbb0xYTcLmoHSXlLs4Kn+7M/Up88WeHOuRB6hMx6Hd4YMzOUy9A5zGaoksbGnrgbzEg3VMbR58JJqrYG3zQZ/djnK0zmmbY+bzZ0j0N74wDf5qce5xSWCT4+LNG3g3VR/ds+PQ4Fz4s8TbFoUePqg05BhdM2lep4iwCdGZXXZg83Ndx74+U7cc2o25/kyGMFHJBLjAMzjNDL5lM1OXWKtKvBW3k6OimyGxkB/fPWdOEqb+zzmM0b1YiW6qdWf48EbH9Ut2c4nY1lUEo+JLQXe6STsjtps8r25bb6ofE9+F+SWpFR+YLGmG3zMwfnz242N2748rIlX7xyKmjuY+eJsAZ63yp2+OvCZqT50bGKG7ReY6dsRWRJr3OAonDmd6dZNI4776KoQ1jj4wlHZ5p1rV8GM5jmJgdHna1w59vRyLsHHCPBLoxIHX5wTYhQQB574YBfzQ2LID1srAv96tuLgh6MuiIqTSH0p76QzyBsbWYnNjvVk9iCc2Nm6I/jXvK0D3rE3yfU4G48bTu2JOL3GJj/Vj+SdzaYTZ7QXNhr8mcoDO6R6AfQ+4C//3d9TyYCtCNGx+mzMgZd0Ucz7rY19TDpxegca8RQLVRXhcIzFgndOcYptBv7+fiDvBUBX3e6bz/QCmzHXIjC7nfNUzJhmDp95HM6+0B1mqirC4RjzvYQ4tgeeuQa8J8v5bpQC7zfkOW3MO/v5c6BTN+ISytEHWQQ+lWO94F8HuXsS78Ryp9wvYHQAfiqfGPXOZ+qwbqpnkzULNCrVZ2KsGfzCityul3O4rfQO+bkxuyWnNNEbG6hCBKsC33lOqX36+Yq1msFfmBs9hNlZuJDOLvi5/+e4u4MAopT7bvTCdwvU1pzLfj3FNuDT0vxQkStoBvxrs+t43N55o4KZOzMVEHv2szE89MFzCnoYoxh8xMCOqMhNZSgd7s4V4VT9cjV05Jx7WpQNJu1p3GhvunxOqCbAp1bEEdkfzWNe371xSl3TBe/cuahII6T390Jl6B2KwS9L9Y65J9w95huy1GsyZwz4uLNlXjxuXOkXsRLw/xKwxRUJnXEDPMd+PMS9DF7ytAnFQ4Jf3e59cBbwmfta4B21EvChqPa+LrIteErd6wbgE0wYkXE2Otn7wsiwjBN2bPBSDmbG/M5awJjm7+24hNGcY29avrDMbFUpeJqAOJMix/z35mBvmt1N4M1Bn71OyDmKqoodzJtpq1SFy+Ytr4FawdMS86Tx03pn87393hj1O6P8eytR0HyWgx82stypayXe4hTNgjcsNK2fi5mKx09GrEZLn9YJ56YvrcYE+gZrqw0+qjp6+3jvBHtmt+WoJ1s6dwm278xfSjFWcoePtj8jLj4zjCmEqL08fiAl3H7fDgaeaCUexsh196Hk2Vy87+2jnA3wzgL9JLo9ImGB9+8g5DbfxctXCVYz+MA9eA985G1yD7y7U3jAy/4OxvUNwN8sIyorBOcE0wSNNwvB0zdtCYHxtBYdxPladyHVJ9hhU32YTvoDxtHPxdjg3UPQTV6IS/C7kEmTg7uOvCPNnhrWVvwSEQt+GtaxQrLFh664WWKcksKJe3fwQ5fHVt06iXFnizHvAPGXCv0YJfuYnbnb/4tlKeANldxlVwn+4bvTVz/z4KnTQOXHwOmK/LasmISjDuGN3tnwmAFksIuJOk8NgH/7vH/7lE/1wa8U0BWPOVvuI9L2YaZn7qQu2ovBCWS6ntgmL0ZNWvx5ulmt4B/tw/O+v7u7C3UFki36MzzXXGsewNwwfrC2uSovBmfn+FFQpO3IszfrmeCVrcvDs3fX17xrfoGEmmnNCqO1Uq2YdDLv49KF44iaAQYSWMEvTe7b4h++v3Xx24MX+1Mj1XvkOYnJPbBkMM/jyaW9bcDPtgP4j98O3HcAH6mI7Yt98HyDd8GbqzqhKzLZkiRbgX91Op34wV1+PZZInBm2AJ4cxA8aagHXfTelenMdV7atL/u1wM+2Yj3SJFcAvbvBK3SeW6tfSBjj03F5xUPDgwQrtXx1HPD0SZTBm5hNvAT4s8fdRc9/9ZVr/kvmgCusW7YNnj+5jsIoZ2M2E7qf1p0LhiDPV6Vy8FGStsBT982MggRmZq2eAO95FKpSYapPlVQLfkrb3hoeC15qcP4ufxro6DcZqSkCLwyiqMId0aLp3pfmPnf7fGukjwDwRcH7BOLB26neX9ojO4d5RhYMCeATwZurqaEY0sDbqd5S+Afi7rYMr+GQRPA1zuMzJCXAm+ercKqnjQFPeqDGg24helXO7VAiyAN8ZlRRiuCaq1nIdRLBcZJQI7+AJGApKXKxE1myeaoXo4qcDsVfh9N710kCeGNZIC8wMsKmwZeKKkBj2hl/HRLgfY6MUwd8jAH8sqjkUzzvTXDiSzwnnFc71UeZtlRfLKpAg18APsIJOSaI85I0QQkGtpqifvCyTWt53q/fhnXyYoHxNm2CIt7XiTKAj7TLyeZ+elC4dRLnpAP4FsHbW+2F3njwKXEh1ReOSjI+1d+w+atwoVRvH3xpXJtJtIIXFOZ99kZutQF8KYWx8L7QSZm5w3oSgKctMCkP6qjFvljbv/bRkuOBT5IQi7sAXxo8N/dev+rsqJ54yAOpvjR4dj129apfZ4DDO3Orez8n3QumcxFRsQ/BeJL4G6bTgcXiE3j/vp2kxAJOsVRPE3Il4bthlqLzjuvJx1RP3rDlRABfCjxHtDR4Eimd6kWnSPWlwMfOtNxRlqigGjxxHQRqQGUj+oEsITTi11Mkj7dXFeDTJHzLd8F7Qn+e1p+lDp3m7i/+iqGFMxVVGOA9iwMvLdsbBXphdEm7Avi9wEekejoJd/6XW8e5G09e2IZUv1lUkQqmLXad/TD+tCmpTWIBp1bwJMiO2GqCXzGu6Lv+WV4UgWdm2EwD7pi/PU8eKCsuwgnAZ0ZlGjfDpldgyt0QSL3tAPAFojKNXVqhZu9sNi8aF+2FTvVJi1FRpgV85GJqefDytD/SS3BcAfCcESfOX+Sd/1sM3hVKyLgJHsBnRjUY14Z7txhxVz01LnIuEBK5pZHqM6O62TQJmzeQCqpIwImwUCeUEYwFHzKA923stu3PhCICkS2hl2hj4yKNSfVBA3jCuOQrZNS4Fh+VxrFytxt41/j17ZFkbB8fk8YBvhrwvCIVvCUtFhfA50aVrkhL9ZZwm8W+chKALyLZCnw5LwCfLhFvuxfzQlnBJUWAT5akPYgB8K2Al4bqMnhyB58kluTtRlN9C3a9Lxoqkiol9zAbA85rtEO0eKY93zam3wkSkgS98IcncPKjWqaQnrctOh4k7uQFwTea6nNc7HJ/yr1ft/KK4vDAFwZ3hu1yR9q6U7vMSSp4WQLwUVElOwk6XbcLinhIHqk+RpLuJORUWLnL8LKLpBnw5SUFnQj5SBH4T990V/v9TwCvCnz/6T9+UNbikepv9v6Lf6wKvsyaeK1IGga/ch8vrImnWK1IAJ6zvcBv9OWmdsF/fvGk71/+4WipPu0R+VGjCfzLL6//++Q3jqqwYgH4JddKpbWnJRb4T3/+yXjZFbx42pemeuL707xCE/jPf60FvHzeFzpJ+pbUcVI9fdfQTvW/XGZzn198uXuqXx+8+N3aHC+rSxIV16dGiKNY4Pv3l2JP1hvcRUvKpvpBYnG3v55FuFUFnrO1olomyXEyoKUbu7X1IOBjUv2wVk+s3q0W1SLJrIgegY2SCa30uM7SuOoET0uoFt/OdI5rt7wkMFo/YKpnJBT4X/+4+6g+UhH9KKSX6hfGVfyZkqrAVzCdi1UEO+rlTqhjh2b3jYNvp8XTVmZdmH2GWrAaah8pabuPX1PCdCOFvdQBvr1R/ZqSBWu2DdWeavGErRhVree3WslBwC+5G7IHkqgoWwX/+cX2D1s2Aj4uzFbB97+QC/VI9YcH/2gvqQavcnCnKNUP9l7Rc/UNStYBf+nm0eKrlqzTx/+O/kbFxlGt5SRpPKEI/B6j+lWq7gPub5tTyCsCz9vGUWUqCMAA726qEXzuF6s58Ej1xqYKwef/lAKT6tOsVgnAZzlpV3Jc8Cv8hsaRJAcGX4WTJZJNlp8BfrbwCd8krm1uOCkFT/2cXMTDtgDvbmoMPPkDkhEP264PnvxmTnEvixSHBR/xsO0GmQi/ZZsflWDyL4e6JRc6WSAB+BJR1eBkSapvqPYA35wE4JVKAF6pZAPwv/14+lMh8MJEB+D3cCKC//C0f/W8CHhpaeNQ4JNn8lWC/+ffLuz7u7u7UFcQsuvvcSiw1urJBPv3G/i+wVQf/Xv1WV48Sfqibc0tvgT4opKwwgOAVO9uksCX6+PLSioGv4GknVH9Dn+TZq9Uv4WkmXl8+Z+RqBUJwFu2E3jbKTvNzPSyg6QZ8Lukevdy8yXB3zQF+FzwxSUlwF/3J4DX8G3ZQ4APpfrpx2wZos4PwB7/+/GHAR+SiD9q620G+E2i2tBJJHik+k2i2tJJXKrP9VJQAvCyRU3n2PKxXnaQALxowemcXD7Sy6hNlizwslwB8PHlI7040mpqH5YcFvyGqR7gi0VVgxOkeoCvS6IKfGreXuSkEYkm8KkjtUVOWpEAfGEnrUhqA39Dg1S/uqQy8EOjbKjqrUoAXqmkMvDrpvpcxZEktYEvGdUmTlr9UTWAz5M0+zOKAJ8nAXil4JHqtYJvVQLwSiUAr1QC8EolAG9aqyM1gM9TNDM3K/AsL8Ab1gr4nGd5lysODL6VVA/wWZJKKC6RINXnSGqhuI8E4JVKAF6p5Ljgg99IrhUJwGdFFf4NglqRAHxWVE2Ap382AeCzomog1TsX5/gR4DOjqsEJwAM8YUj1q0RVg5NqJQCvVALwSiUAr1TSJnhiqgbwezjZGDy1OAPweziJBF/KWvsrTUc3pPqGJE2m+jKSWpG0VHuAb04C8EolAK9UAvBKJQCvVKIZfPJfcK2WIsCnWPrfbK6WIsCnGMDnS5oEj1SfL2kT/BZOqpUAvFIJwCuVALxSCcArlQC8UgnAK5UAvFIJwCuVALxSCcArlQC8UgnAK5UAvFIJwCuVALxSCcArlQC8UgnAK5UAvFIJwCuVALxSCcArlQC8UgnAK5UAvFIJwCuVALxSCcArlQC8UgnAK5UAvFIJwCuVALxSCcArlQD80SSRv+wD8AeTxP6WF8AfTALwdTjRnOofvjt99TPAVybZAPzb5/3bpwBfmWSbVP/hed/f3d2FugJYm8aCf3j27vq68eVYg5NqJWu3+Fenr989fH/r4gG+IskGqf7jtwN3gK9IsgH4V6fTCYO72iSYxyuVALxSCcArlQC8UgnAK5UAvFIJwCuVALxSCcArlQC8UgnAK5UAvFIJwCuVALxSCcArlQC8UgnAK5UAvFIJwCuVALxSCcArlQC8UgnAK5UAvFIJwCuVALxSCcArlQC8UgnAK5UAvFIJwCuVALxSCcArlQC8UgnAK5UAvFIJwCuVALxSCcArlQC8UgnAK5UAvFIJwCuVALxSCcArlQC8UgnAK5UAvFIJwCuVbAoedkxDi29IglSvVALwSiUAr1QC8EolAK9UAvBKJQCvVALwSiUAr1QC8EolAK9UAvBKJQCvVNIE+K5bFFVxxZEkLYDvugjyAL+HE4BvTtICeKT6FSRNgF9HUiuSlmoP8M1JAF6pBOCVSgBeqQTglUoAXqkE4JVKAF6pBOCVSgBeqQTglUoAXqkE4JVKAF6pBOCVSgBeqQTglUoAXqlkU/Br2t1hnLRXFYBvyAvAV+ekvargBw6VGsArNYBXagCv1PYE//Dd6auf13fz9vnaHn778fSntX30hSuyJ/jHirx9urqXV6fna7v48LR/tbqTwhXZOdV/eL62h4f/Wb/F//NvF/YrW+GK7Av+4dm79Z2sD/7vW4A/Sqp/dfr63cP3K3fxFycbgN+kxR8F/KN9/HaDod0WLX6bPv444F+dTqfWGgppGNXDmjGAV2oAr9QAXqkBvFIDeKWmFvznF133ux8u715++fjfr/96+fi+u2789d/+cf13ZNMK/vOLR9zvf//TI/J//+vl/0fO77/43z88vvvjTwB/XHv/xYXrfz82+ZdPfnnSD438Av5xA8Af1375cnjz6c9TA7+1+Mddl7zffQHwR7QL+Jdd9+T25snYxw/g0eIPa7dU//LJp2+6a+u+cX6PVH90uw7uPn3z5Ir683/9MIPH4O7g9pjouyefLyP6C/ABPKZzsIMbwCs1gFdqAK/UAF6pAbxSA3il9v/OIYsCICH4bgAAAABJRU5ErkJggg==" alt="plot of chunk reg11"/></p>
+
+<pre><code class="r"># El primer valor es la combinacion de genes y el segundo indica el tipo de cancer
+## [[1]][[1]], [[2]][[1]], [[3]][[1]], [[4]][[1]], [[5]][[1]], [[6]][[1]], [[1]][[2]], [[2]][[2]], [[3]][[2]], 
+## [[4]][[2]], [[5]][[2]]. El 11vo grafico seria [[5]][[2]]. 
+ggsave(&quot;results/regresion11.pdf&quot;, width = 8, height = 5, dpi = 400)
+</code></pre>
+
+<h3>[1 PUNTO] 2.7. Interprete los resultados de las figuras <code>boxplot3.png</code> y <code>regresion11.pdf</code>.</h3>
+
+<pre><code class="tex"># Esciba aquÃ­ su intepretaciÃ³n
+## boxplot3 
+## En el grafico muesta un diagaram de cajas y bigotes. Se puede observar que existen valores negativos positivos de expresioÃ³n, la mediana es 0.7 y el rango de expresiÃ³n es de -5 a 3 indicando que los valores de cada gen difieren.  
+## regresion11 
+## Los valores de distribuciÃ³n muestran los resultados del gen GAPH en el eje x y MUC1 en el eje y. Los datos pertenecen al cancer de ovario. El grafico de puntos indica que los datos son variados y mediante analisis de regresiÃ³n lineal se concluye que presentan una baja relaciÃ³n entre ellos. Finalmente la pendiente del grafico de regresiÃ³n lineal tiende a ser negativo. 
+
+</code></pre>
+
+<h2>3. CONTROL DE LA VERSIÃN [1 PUNTO]. Se verficarÃ¡ en ell repositorio de GitHub.</h2>
+
+</body>
+
+</html>
+
