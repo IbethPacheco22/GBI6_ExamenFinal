@@ -4,6 +4,7 @@
 ### Carrera: Ingenieria en Biotecnologia 
 ### Materia: Bioinformatica 
 ### Semestre: 6
+### Grupo: 2
 
 ## Caracteristicas del computador :Procesador INTEL CORE I5 10MA generación, MEMORIA RAM 8GB, DISCO DURO 1 TERA
 ​
